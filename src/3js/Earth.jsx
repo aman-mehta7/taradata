@@ -11,7 +11,7 @@ import { useGLTF } from "@react-three/drei";
 import gsap from "gsap";
 
 export default function Earth(props) {
-  const { nodes, materials } = useGLTF("models/earth (2).glb");
+  const { nodes, materials } = useGLTF(import.meta.env.BASE_URL + "models/earth (2).glb");
 
   const earthGroup = useRef();
   const meshesRef = useRef([]);
@@ -86,4 +86,4 @@ export default function Earth(props) {
   );
 }
 
-useGLTF.preload("models/earth (2).glb");
+useGLTF.preload(import.meta.env.BASE_URL + "models/earth (2).glb");

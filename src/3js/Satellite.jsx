@@ -14,7 +14,7 @@ export default function Satellite(props) {
   const satelliteGroup = useRef();
   const satelliteMesh = useRef();
 
-  const { nodes, materials } = useGLTF("models/satellite.glb");
+  const { nodes, materials } = useGLTF(import.meta.env.BASE_URL + "models/satellite.glb");
 
   useEffect(() => {
     if (satelliteGroup.current && satelliteMesh.current) {
@@ -59,4 +59,4 @@ export default function Satellite(props) {
   );
 }
 
-useGLTF.preload("models/satellite.glb");
+useGLTF.preload(import.meta.env.BASE_URL + "models/satellite.glb");

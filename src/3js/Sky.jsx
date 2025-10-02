@@ -10,7 +10,7 @@ Title: Night Sky Visible Spectrum Monochromatic
 import { useGLTF } from '@react-three/drei'
 
 export default function Sky(props) {
-  const { nodes, materials } = useGLTF('models/night_sky_visible_spectrum_monochromatic (2).glb')
+  const { nodes, materials } = useGLTF(import.meta.env.BASE_URL + 'models/night_sky_visible_spectrum_monochromatic (2).glb')
   return (
     <group {...props} dispose={null}>
       <group position={[-1.007, -6.611, 0]} rotation={[Math.PI / 2, 0, -Math.PI]} scale={0.003}>
@@ -46,6 +46,6 @@ export default function Sky(props) {
   )
 }
 
-useGLTF.preload('models/night_sky_visible_spectrum_monochromatic (2).glb')
+useGLTF.preload(import.meta.env.BASE_URL + 'models/night_sky_visible_spectrum_monochromatic (2).glb')
 
 

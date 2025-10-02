@@ -45,7 +45,7 @@ export default function Particals(props) {
   }, []);
 
 
-  const { nodes, materials } = useGLTF('models/need_some_space.glb')
+  const { nodes, materials } = useGLTF(import.meta.env.BASE_URL + 'models/need_some_space.glb')
   return (
     <group  {...props} dispose={null}>
       <points
@@ -59,4 +59,4 @@ export default function Particals(props) {
   )
 }
 
-useGLTF.preload('models/need_some_space.glb')
+useGLTF.preload(import.meta.env.BASE_URL + 'models/need_some_space.glb')

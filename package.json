@@ -1,9 +1,11 @@
 {
-  "name": "taradata",
+  "homepage": "https://aman-mehta7.github.io/taradata",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
@@ -14,6 +16,7 @@
     "@react-three/drei": "^10.7.6",
     "@react-three/fiber": "^9.3.0",
     "@tailwindcss/vite": "^4.1.13",
+    "gh-pages": "^6.3.0",
     "gsap": "^3.13.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
