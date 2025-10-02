@@ -98,7 +98,7 @@ const CoolText = () => {
       >
         <Text3D
           ref={text1}
-          font="/fonts/helvetiker_regular.typeface.json" // must exist in public/fonts
+          font="taradata/fonts/helvetiker_regular.typeface.json" // must exist in public/fonts
           size={2} // font size
           height={0.6} // extrusion depth (make it thick enough)
           bevelEnabled
@@ -132,7 +132,7 @@ const CoolText = () => {
       >
         <Text3D
           ref={text2}
-          font="/fonts/helvetiker_regular.typeface.json" // must exist in public/fonts
+          font="taradata/fonts/helvetiker_regular.typeface.json" // must exist in public/fonts
           size={2} // font size
           height={0.6} // extrusion depth (make it thick enough)
           bevelEnabled
@@ -166,7 +166,7 @@ const CoolText = () => {
       >
         <Text3D
           ref={text3}
-          font="/fonts/helvetiker_regular.typeface.json" // must exist in public/fonts
+          font="taradata/fonts/helvetiker_regular.typeface.json" // must exist in public/fonts
           size={2} // font size
           height={0.6} // extrusion depth (make it thick enough)
           bevelEnabled
