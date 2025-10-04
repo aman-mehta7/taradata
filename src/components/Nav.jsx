@@ -4,7 +4,7 @@ import React, { useRef, useState } from "react";
 import { SlArrowRight } from "react-icons/sl";
 import { SlArrowLeft } from "react-icons/sl";
 
-const Nav = ({ story, setStory }) => {
+const Nav = ({ story, setStory, data, setData }) => {
   const [nav, setNav] = useState(false);
 
   const leftArrowRef = useRef(null);
@@ -51,9 +51,8 @@ const Nav = ({ story, setStory }) => {
   return (
     <section
       id="nav"
-      className={` absolute ${
-        nav ? "-right-[0vw]" : "-right-[15vw]"
-      } top-0 z-[99999] transition-all duration-500 ease-in-out opacity-0`}
+      className={` absolute ${nav ? "-right-[0vw]" : "-right-[15vw]"
+        } top-0 z-[99999] transition-all duration-500 ease-in-out opacity-0`}
     >
       <div className="nav-container h-screen w-[20vw] text-white clip-path flex items-center bg-zinc-800/65 hover:bg-zinc-800/85 transition-all duration-500 ease-in-out overflow-hidden opacity-0">
         <button
@@ -87,8 +86,13 @@ const Nav = ({ story, setStory }) => {
           >
             STORY
           </button>
-          <button className="text-5xl font-bold">DATA</button>
-          <button className="text-5xl font-bold">TEAM</button>
+          <button className="text-5xl font-bold"
+            onClick={() => {
+              setData(!data);
+              setNav(!nav);
+            }}
+          >DATA</button>
+          {/* <button className="text-5xl font-bold">TEAM</button> */}
         </div>
       </div>
     </section>
