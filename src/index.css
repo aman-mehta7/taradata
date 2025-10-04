@@ -11,6 +11,16 @@
   Canvas {
     @apply w-screen h-dvh;
   }
+  h1{
+    font-family: 'Alan Sans', sans-serif; /* headings font */
+    font-weight: 800;
+    /* font-size: xx-large; */
+  }
+    p{
+        font-family: 'Alan Sans', sans-serif; /* headings font */
+        /* font-weight: 500; */
+        font-size: x-large;
+  }
 }
 
 @layer components {

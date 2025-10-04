@@ -58,7 +58,7 @@ const Nav = ({ story, setStory }) => {
       <div className="nav-container h-screen w-[20vw] text-white clip-path flex items-center bg-zinc-800/65 hover:bg-zinc-800/85 transition-all duration-500 ease-in-out overflow-hidden opacity-0">
         <button
           onClick={() => setNav(!nav)}
-          className="arrow relative w-12 h-12 text-5xl font-bold px-10 py-90 transition-all duration-400 ease-in-out hover:scale-110"
+          className="arrow relative w-12 h-12 text-5xl font-bold px-10 py-90 transition-all duration-400 ease-in-out hover:scale-110 hover:text-[#05995b]"
         >
           {/* Left Arrow */}
           <span
@@ -77,18 +77,18 @@ const Nav = ({ story, setStory }) => {
           </span>
         </button>
 
-        <div className="flex flex-col gap-30 items-center justify-center text-amber-50 h-full w-full">
+        <div className="flex flex-col gap-10 items-center justify-center text-amber-50 h-full w-full">
           <button
             onClick={() => {
               setStory(!story);
               setNav(!nav);
             }}
-            className="text-5xl font-bold"
+            className="text-5xl font-bold hover:text-[#05995b] p-8"
           >
             STORY
           </button>
-          <button className="text-5xl font-bold">DATA</button>
-          <button className="text-5xl font-bold">TEAM</button>
+          <button className="text-5xl font-bold hover:text-[#05995b] p-8">DATA</button>
+          <button className="text-5xl font-bold hover:text-[#05995b] p-8">TEAM</button>
         </div>
       </div>
     </section>
